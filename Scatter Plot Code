@@ -1,5 +1,6 @@
+
 library(ggplot2)
 setwd("C:/Users/Henry.Nketeh/Desktop")
 HomeA <- read.csv("teamAttendance3.csv")
 ggplot(HomeA, aes(y =Teams, x = Difference , color=Increase)) +
-  geom_point()
+  geom_point() + ggtitle("2019 NBA Team Attendance Increase")
